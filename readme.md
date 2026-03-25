@@ -6,6 +6,23 @@
 
 Este projeto é um **Simulador de Telemetria Industrial** que monitora a temperatura de uma sala em tempo real. Ele utiliza uma stack moderna em Python para criar um gêmeo digital (Digital Twin) de um circuito de hardware, integrando visualização 3D, análise de dados e armazenamento persistente.
 
+<table style="width:100%; text-align:center; border-collapse:collapse;">
+  <tr>
+    <td style="width:33.33%; padding:10px;">
+      <p><b>MODELO DE CIRCUITO (CAD)</b></p>
+      <img src="circuito.png" alt="Visualização do Circuito CAD" style="max-width:100%; border-radius:8px;">
+    </td>
+    <td style="width:33.33%; padding:10px;">
+      <p><b>ARQUITETURA DO SISTEMA</b></p>
+      <img src="Sistema.png" alt="Diagrama da Arquitetura do Sistema" style="max-width:100%; border-radius:8px;">
+    </td>
+    <td style="width:33.33%; padding:10px;">
+      <p><b>DASHBOARD DE TELEMETRIA (DARK MODE)</b></p>
+      <img src="dashboard.png" alt="Interface Dark Mode Pro" style="max-width:100%; border-radius:8px;">
+    </td>
+  </tr>
+</table>>
+
 ## 🚀 Metas do Projeto
 - **Visualização 3D:** Renderização de hardware estilizado (ESP32 + DHT22) em ambiente CAD.
 - **Monitoramento em Tempo Real:** Medidor circular (Gauge) dinâmico com alertas visuais.
