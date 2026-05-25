@@ -1,0 +1,15 @@
+# Pastas de sistema e cache
+.pio/
+.vscode/
+.git/
+.DS_Store
+*.db
+*.log
+*.zip
+AppData/
+Documents/
+Downloads/
+Pictures/
+Videos/
+# Ignorar arquivos temporários de configuração
+.env

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "KyberMint Labs",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico-w", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -150, "left": 150, "attrs": {} },
+    { "type": "wokwi-led", "id": "led_alerta", "top": 50, "left": 200, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led_rele", "top": 100, "left": 200, "attrs": { "color": "blue" } },
+    { "type": "board-ssd1306", "id": "oled1", "top": 150, "left": -100, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "mq135_simulador", "top": -100, "left": -150, "attrs": {} }
+  ],
+  "connections": [
+    [ "dht1:VCC", "pico:3V3", "red", [ "v0" ] ],
+    [ "dht1:GND", "pico:GND", "black", [ "v0" ] ],
+    [ "dht1:SDA", "pico:GP2", "green", [ "v0" ] ],
+    [ "led_alerta:A", "pico:GP13", "red", [ "v0" ] ],
+    [ "led_alerta:C", "pico:GND", "black", [ "v0" ] ],
+    [ "led_rele:A", "pico:GP8", "blue", [ "v0" ] ],
+    [ "led_rele:C", "pico:GND", "black", [ "v0" ] ],
+    [ "oled1:VCC", "pico:3V3", "red", [ "v0" ] ],
+    [ "oled1:GND", "pico:GND", "black", [ "v0" ] ],
+    [ "oled1:SDA", "pico:GP4", "green", [ "v0" ] ],
+    [ "oled1:SCL", "pico:GP5", "yellow", [ "v0" ] ],
+    [ "mq135_simulador:VCC", "pico:3V3", "red", [ "v0" ] ],
+    [ "mq135_simulador:GND", "pico:GND", "black", [ "v0" ] ],
+    [ "mq135_simulador:SIG", "pico:GP26", "orange", [ "v0" ] ]
+  ]
+}
